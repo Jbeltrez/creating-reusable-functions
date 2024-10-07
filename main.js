@@ -67,12 +67,13 @@ function sortByAge(arr) {
 }
 
 function changeJonAndIncrAge(arr) {
-    return arr.map(element) => 
+    return arr.map(element => {
         return {
-        id: element.age
-        name: element.name
-        job: element.occupation
+        id: element.id,
+        name: element.name,
+        job: element.occupation,
         age: element.age += 1
     };
+    });
     
 }
