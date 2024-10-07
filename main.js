@@ -23,8 +23,23 @@ function findLongest(arr) {
     }, "");
 }
 
+function longestStringArr(arr) {
+
+}
+
 
 const strs = ['one', 'two', 'three', 'four'];
 console.log(findLongest(strs)) 
 
 // console.log(str)
+// take an array of strings, and a number and return an array of the strings that are 
+// longer than the given number
+
+function stringsLongerThan(arr, num) {
+    return arr.filter((element => element.length> num))
+}
+
+// const strs = ['say', 'herllo', 'in', 'the', 'morning'];
+
+// console.log(stringsLongerThan(strs, 3));
+// console.log and variable assignment above is to test the function which performs exactly as intended
