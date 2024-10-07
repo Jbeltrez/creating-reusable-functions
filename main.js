@@ -43,3 +43,36 @@ function stringsLongerThan(arr, num) {
 
 // console.log(stringsLongerThan(strs, 3));
 // console.log and variable assignment above is to test the function which performs exactly as intended
+
+// Take a number, n, and print every number between 1 and n without using loops. use recursion 
+
+function printAllNums(n) {
+    function comparison(n2) {
+        if (n2 > n) {
+            return; 
+        }
+        console.log(n2)
+        comparison(n2 ++)
+    }
+
+    comparison(1)
+}
+
+function sortByAge(arr) {
+    return arr.sort((a, b) => a.age - b.age)
+ }
+
+ function filterAgesOlderThan50(arr) {
+    return arr.filter((element.age > 50))
+}
+
+function changeJonAndIncrAge(arr) {
+    return arr.map(element) => 
+        return {
+        id: element.age
+        name: element.name
+        job: element.occupation
+        age: element.age += 1
+    };
+    
+}
